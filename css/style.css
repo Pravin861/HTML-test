@@ -1,0 +1,767 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI Regular';
+}
+/* Font face */
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+    }
+
+
+    /*=================================== Common css :STARTS =============================== */
+.container {
+    max-width: 1250px;
+}
+.padd0{
+    padding: 0;
+}
+
+.commonBtn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 12px 30px;
+    background-color: #bf3b78;
+    color: #fff;
+    line-height: 1.5;
+    border-radius: 3px;
+    border: 1px solid;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #a33166;
+}
+button.CommonBordBtn{
+    background: transparent;
+    border: #021647 1px solid;
+    color: #021647;
+    padding: 11px 30px;
+    margin-right: 20px;
+}
+button.CommonBordBtn.btnBordSmall{
+    font-size: 12px;
+    padding: 8px 20px;
+    margin-right: 10px;
+}
+button.CommonBordBtn:hover{
+    background-color: transparent;
+    border-color: #a33166;
+    color: #a33166;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================== Common css :ENDS =============================== */
+
+.logo{
+    width: 80px;
+}
+.topHeader .navbar{
+    justify-content: flex-end;
+}
+.navbar .nav-item .nav-link{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0;
+    color: #1c304b;
+}
+.navbar .nav-item .nav-link:hover, .MainMenu .navbar .nav-item .nav-link:hover{
+    color: #bd1469;
+}
+.topHeader .navbar-nav{
+padding-top: 16px;
+}
+.topHeader li.nav-item {
+    padding: 0 10px;
+    border-left: 1px solid #788290;
+}
+.topHeader li.nav-item:first-child{
+    border-left: unset;
+}
+.topHeader li.nav-item:last-child{
+    padding-right: 0;
+}
+
+.MainMenu{
+    padding: 10px 0;
+    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+.MainMenu .navbar, .MainMenu .navbar .dropdown{
+position: unset;
+}
+.MainMenu .navbar .nav-item .nav-link{
+    padding: 20px 16px;
+    font-size: 14px;
+    color: #1f2532;
+}
+.MainMenu .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    padding: 50px 0;
+}
+
+button.btnSmall{
+    font-size: 12px;
+    padding: 9px 20px;
+    border: 1px solid;
+}
+.MainMenu .navbar .dropdown.SolutionsDropdown{
+    position: relative;
+}
+.MainMenu .navbar-expand-lg .navbar-nav .dropdown.SolutionsDropdown .dropdown-menu{
+    padding: 10px 0;
+}
+.SolutionsDropdown .innerSubMenu li a{
+    width: 100%;
+    padding: 7px 20px;
+}
+/* .dropdown-menu:after{
+    content: no-open-quote;
+    position: absolute;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #000;
+    opacity: 0.3;
+    left: 38px;
+    top: -24px;
+} */
+.dropdown-menu {
+    border: none;
+    box-shadow: 2px 3px 10px #8b8b8b29;
+    border-radius: .25rem;
+    z-index: 10000;
+}
+.dropdown-item{
+    font-size: 14px;
+    color: #1f2532;
+    font-weight: 600;
+}
+
+
+
+/* Mega Menu */
+ul.dropdownSubmenu {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+.dropdownSubmenuProd li.mainLi{
+    width: 16.66%;
+    padding: 0 30px;
+}
+.SubHead a{
+    color: #1f2532;
+    font-size: 14px;
+    font-weight: 600;
+}
+.SubHead a i {
+    font-size: 13px;
+}
+.SubHead img{
+    width: 20px;
+}
+.SubHead span{
+    margin: 0 10px;
+}
+.submenu:hover{
+    color: #bd1469;
+    text-decoration: none;
+}
+.subMenuHead p{
+    min-height: 50px;
+    font-size: 13px;
+    color: #6d6d6d;
+}
+.innerSubMenu{
+    list-style-type: none;
+    padding-left: 0;
+}
+.innerSubMenu li a {
+    font-size: 14px;
+    color: #1f2532;
+    padding: 5px 0;
+    display: inline-block;
+}
+.innerSubMenu li a:hover {
+    color: #bd1469;
+    text-decoration: none;
+}
+.innerSubMenu li a img{
+    width: 20px;
+    margin-right: 10px;
+}
+/* Top banner Section : STARTS */
+section.topBanner {
+    padding: 70px 0;
+}
+.topBanner h1{
+    color: #1c304b;
+    line-height: 1.25;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: 'Segoe UI Bold';
+}
+.topBanner p{
+    color: #1c304b;
+    font-size: 18px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+.ButtonsDiv{
+    margin: 30px 0;
+}
+ul.brands{
+list-style-type: none;
+padding-left: 0;
+    margin: 0 -20px;
+}
+ul.brands li{
+display: inline-block;
+padding: 20px;
+}
+ul.brands li img{
+width: 95px;
+opacity: 0.6;
+}
+.rightsideImg {
+    width: 93%;
+    margin: 0 0 0 auto;
+}
+.rightsideImg img{
+    width: 100%;
+}
+
+/* =============================== BRANDS SECTION CSS :STARTS =============================*/
+.BrandsTrusted{
+    padding: 30px 0 20px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.BrandsTrusted h5{
+color: #1c304b;
+font-size: 14px;
+text-align: center;
+margin-bottom: 20px;
+font-weight: 600;
+
+}
+.BrandNames {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   flex-wrap: wrap;
+}
+.brandImg {
+    padding: 10px;
+}
+.brandImg img{
+    width: 120px;
+}
+
+/* =============================== BRANDS SECTION CSS :ENDS =============================*/
+
+/* =============================== DIGITAL EXPERIENCE SECTION CSS :STARTS =============================*/
+h2.SecondoryHead {
+    font-family: 'Segoe UI Bold';
+    font-size: 38px;
+    text-align: center;
+    color: #1c304b;
+    width: 66%;
+    margin: 0 auto;
+    padding-top: 90px;
+    margin-bottom: 50px;
+    letter-spacing: 0.6px;
+}
+.buildBg{
+    background-image: url(../Assets/dot-one-home-product-section.svg);
+}
+.bgWhite{
+    background-color: #ffffff;
+    padding: 20px 70px;
+}
+.bordDivHead h3{
+    font-size: 20px;
+    color: #2b3945;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.bordDivHead {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.bordDivHead i{
+    transition: 0.5s;
+}
+.bordDiv {
+    border: 2px solid #d9dde1;
+    border-radius: 5px;
+    padding: 40px 50px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    display: block;
+    text-decoration: none !important;
+}
+.bordDiv p{
+    color: #2b3945;
+    font-size: 15px;
+}
+.CornerIcon {
+    position: absolute;
+    top: -13%;
+    left: -7%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+ 
+}
+.CornerIcon img{
+    width: 33px;
+}
+.bordDiv:hover{
+    border: 2px solid #bd1469;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px 1px #ccd3d999
+}
+.bordDiv:hover .bordDivHead h3{
+    color:#bd1469 ;
+}
+.bordDiv:hover .bordDivHead i{
+    transform: translateX(5px);
+    margin-left: 5px;
+    color:#bd1469 ;
+}
+.CheckPlatform {
+    text-align: center;
+    margin: 40px 0;
+}
+.commonBtn.CommonPurpleBtn.checkBtn {
+    padding: 20px 50px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.commonBtn.CommonPurpleBtn.checkBtn:hover.btnarrow{
+    transform: translateX(5px);
+    margin-left: 5px;
+}
+.commonBtn.CommonPurpleBtn.checkBtn span{
+    margin-right: 10px;
+    letter-spacing: .6px;
+}
+/* =============================== DIGITAL EXPERIENCE SECTION CSS :ENDS =============================*/
+
+/* =============================== VWO EXPERIENCE SECTION  : STARTS ============================= */
+.VWOExperienceSec .row{
+    align-items: center;
+}
+.wid80 {
+    width: 80%;
+    margin: 0 auto;
+}
+.VWOExperienceText h3{
+    color: #1c304b;
+    font-size: 32px;
+    font-family: 'Segoe UI Bold'; 
+    letter-spacing: .6px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+h2.SecondoryHead.marB100{
+    margin-bottom: 100px;
+}
+/* .VWOExperienceText {
+    padding: 80px 0 20px;
+} */
+.VWOExperienceText p{
+    color: #6d6d6d;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.VWOExperienceText a{
+    color: #bd1469;
+    font-size: 16px;
+    letter-spacing: .6px;
+    margin-right: 10px;
+}
+.VWOExperienceText a:hover i{
+    transform: translateX(5px);
+    margin-left: 5px;
+}
+.VWOExperienceSec {
+    margin-bottom: 150px;
+}
+.purpleLink:hover.VWOExperienceText i{
+    transform: translateX(5px);
+    margin-left: 5px;
+    color:#bd1469 ;
+}
+.VWOExperienceText i{
+    color: #bd1469;
+    font-size: 13px;
+}
+.bordDivHead i{
+    color: #2b3945;
+    font-size: 13px;
+}
+/* =============================== VWO EXPERIENCE SECTION  : ENDS ============================= */
+
+/* =============================== success stories and tetimonial css ============================= */
+.secHeading {
+    line-height: 1.25;
+    font-size: 38px;
+    font-family: 'Segoe UI Bold';
+    text-transform: inherit;
+    font-weight: 500;
+    color: #1c304b;
+    letter-spacing: .6px;
+    margin-bottom: 70px !important;
+}
+section.sucessStoryParent {
+    background-color: #f8f9fd;
+    padding: 100px 0;
+}
+.industrieSec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.singleBlock.card {
+    width: calc(25% - 20px);
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    box-shadow: 2px 3px 10px #c4c4c4;
+    border: none;
+    text-decoration: none;
+}
+.singleBlock.card p {
+    font-family: 'Segoe UI Bold';
+    margin: 20px 0 5px;
+    font-size: 16px;
+    color: #1f2532;
+}
+.singleBlock.card h3 {
+    font-family: 'Segoe UI Bold';
+    font-size: 25px;
+    margin: 0;
+    color: #30956f;
+}
+.singleBlock.card img {
+    height: 26px;
+    width: auto;
+}
+.carousel {
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 50px
+}
+
+.carousel .item {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 340px;
+    margin-bottom: 70px;
+}
+
+.carousel .item a {
+    color: #eb7245;
+}
+
+.carousel .img-box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #fff;
+}
+
+/* .carousel .testimonial {
+    padding: 30px 0 10px
+} */
+
+.testimonial {
+    color: #000000;
+    font: Times Roman
+}
+
+.carousel .overview {
+    text-align: center;
+    /* padding-bottom: 5px; */
+    line-height: 1;
+    margin: 0 0 16px;
+    color: #2b3945;
+    font-size: 16px;
+    letter-spacing: .6px;
+}
+
+.carousel .overview b {
+    color: #333;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 5px
+}
+
+.carousel .star-rating i {
+    font-size: 18px;
+    color: #ffdc12
+}
+
+.carousel .carousel-control {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+    top: 4px
+}
+
+.carousel-control i {
+    font-size: 20px;
+    margin-right: 2px
+}
+
+.carousel-control.left {
+    left: auto;
+    right: 40px
+}
+
+.carousel-control.right i {
+    margin-right: -2px
+}
+
+.carousel .carousel-indicators {
+    bottom: 15px
+}
+.carousel .testimonial {
+    padding: 0;
+    margin: 30px 0 40px;
+    font-size: 18px;
+    font-family: 'Segoe UI Regular';
+    color: #1c304b;;
+    font-weight: 400;
+    letter-spacing: .6px;
+}
+.carousel .overview b {
+    color: #000000;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI Regular';
+    font-weight: 700;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 100px;
+    height: 100px;
+    margin: 1px 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.carousel-indicators li {
+    background: #e2e2e2;
+    border-color: transparent
+}
+
+.carousel-indicators li.active {
+    border: none;
+    background: #888
+}
+.carousel-indicators {
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+}
+.carousel-indicators li.active {
+    border: 5px solid #007bff;
+    opacity: 1;
+}
+.carousel-indicators li {
+    background-color: transparent;
+    border: 5px solid transparent;
+    opacity: 0.6;
+}
+.carousel .item img {
+    height: 25px;
+}
+.queot i {
+    font-size: 35px;
+    color: #ddd;
+}
+/* ========================================= build for section  css ============================= */
+
+.lernMoreSec {
+    background-image: url(../Assets/build-for.jpg);
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lernMoreSecInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+.lernMoreSecInner .secHeading {
+    color: #fff;
+    margin: 0px 0;
+}
+.lernMoreSecInner p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: 'Segoe UI Regular';
+}
+.lernMoreSecInner a {
+    color: #2196f3;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+    .topHeader {
+        display: none;
+    }
+    .topBanner h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .topBanner p {
+        text-align: center;
+    }
+    .commonBtn {
+        width: 100%;
+    }
+    button.CommonBordBtn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .BrandNames {
+        flex-wrap: wrap;
+    }
+    h2.SecondoryHead {
+        font-size: 26px;
+        width: 100%;
+    }
+    .bgWhite {
+        padding: 20px 40px;
+    }
+    .VWOExperienceText h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .singleBlock.card {
+        width: calc(55% - 20px);
+    }
+    .carousel {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+.commonBtn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+}
